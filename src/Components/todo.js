@@ -1,8 +1,7 @@
 import React  from 'react';
 import AddNewTask from './addTask';
 import ToDoAppList from './addList';
-var textEdit="";
-var idEdit=0;
+
 var tasks = [
 {
 id: 1,
