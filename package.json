@@ -2,7 +2,7 @@
   "name": "todo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://AdelinaBeqiri12.github.io/ToDo",
+  "homepage": "http://adelinabeqiri12.github.io/todo",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",
