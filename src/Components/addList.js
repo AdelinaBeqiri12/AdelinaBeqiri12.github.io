@@ -26,16 +26,16 @@ class ToDoAppList extends React.Component {
   render() {
     var items = this.props.tasks.map((elem, index) => {
       if ( elem.isCompleted === false){
-    return <li   style={{color:'red'}}key={elem.id}><span> {elem.name} </span>
-    <button onClick={this.remove.bind(this,elem)}>Delete  </button>
-    <button onClick={this.done.bind(this,elem)}>Done  </button>
-    <button onClick={this.change.bind(this,elem)}>Change  </button></li>
+    return <li   style={{color:'red'}}key={elem.id}><span> {elem.name} </span>&nbsp;&nbsp;
+    <button onClick={this.remove.bind(this,elem)}><i style={{color:'red'}} className="fa fa-trash-o "></i></button>&nbsp;&nbsp;
+    <button  onClick={this.done.bind(this,elem)}><i style={{color:'red'}} className="fa fa fa-thumbs-o-down "></i></button>&nbsp;&nbsp;
+    <button onClick={this.change.bind(this,elem)}> <i className="fa fa-pencil"></i>  </button></li>
     }
     else
-    return <li   style={{color:'green'}} key={elem.id}><span> {elem.name} </span>
-    <button onClick={this.remove.bind(this,elem)}>Delete  </button>
-    <button onClick={this.undone.bind(this,elem)}>Undone  </button>
-    <button onClick={this.change.bind(this,elem)}>Change  </button></li>
+    return <li style={{color:'green'}} key={elem.id}><span> {elem.name} </span>&nbsp;&nbsp;
+    <button onClick={this.remove.bind(this,elem)}><i style={{color:'red'}} className="fa fa-trash-o "></i></button>&nbsp;&nbsp;
+    <button onClick={this.undone.bind(this,elem)}><i style={{color:'green'}} className="fa fa fa-thumbs-o-up "></i></button>&nbsp;&nbsp;
+    <button onClick={this.change.bind(this,elem)}> <i className="fa fa-pencil"></i> </button></li>
   });
 
     return (

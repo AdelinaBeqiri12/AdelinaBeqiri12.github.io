@@ -1,4 +1,5 @@
 import React from 'react';
+import 'font-awesome/css/font-awesome.min.css';
 class AddNewTask extends React.Component {
   constructor(){
     super();
@@ -30,8 +31,9 @@ class AddNewTask extends React.Component {
     return (
       <div>
       <form onSubmit={this.justSubmitted}>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <input type="text" value = {this.props.textEdit}  onChange={this.writingText}/>
-        <input type="submit" value ="Submit"/>
+      &nbsp;&nbsp;  <input type="submit" value ="Add Task"/>
       </form>
       </div>
     );

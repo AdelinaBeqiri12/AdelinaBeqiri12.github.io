@@ -123,7 +123,7 @@ class Todo extends React.Component {
   render() {
     return (
       <div>
-      <h1>ToDo App</h1>
+      <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add your tasks</h1>
       <AddNewTask  {...this.state}
                    updateList={this.updateList}
                    editList={this.editList}
